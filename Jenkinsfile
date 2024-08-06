@@ -7,7 +7,7 @@ pipeline {
         AWS_DEFAULT_REGION = "us-east-1"
     }
     parameters {
-        choice(name: 'ENVIRONMENT', defaultValue: 'non-prod', description: 'Deployment environment')
+        string(name: 'ENVIRONMENT', defaultValue: 'non-prod', description: 'Deployment environment')
     }
     stages {
 
